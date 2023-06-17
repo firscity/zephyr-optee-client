@@ -1,0 +1,30 @@
+# Copyright (c) 2023 EPAM Systems
+# SPDX-License-Identifier: Apache-2.0
+
+mainmenu "OPTEE Library"
+
+config OPTEE_CLIENT
+	bool "Enable optee-client"
+	help
+	  Enable optee client library. Application can use this library
+	  for use optee capabilities
+
+if OPTEE_CLIENT
+
+config OPTEE_LIBTEEC
+	bool "Enable libteec"
+	help
+	  Enable libteec library. Basic library for optee access
+
+config OPTEE_BENCHMARK
+	bool "Enable benchmark"
+	depends on OPTEE_LIBTEEC
+	help
+	  Enable bencmarking for libteec library
+
+config OPTEE_DRV_STUB
+	bool "Use optee driver stub"
+	help
+	  Use optee driver stub
+
+endif
