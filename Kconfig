@@ -22,6 +22,11 @@ config OPTEE_BENCHMARK
 	help
 	  Enable bencmarking for libteec library
 
+config OPTEE_LIBCKTEEC
+	bool "Enable libckteec"
+	help
+	  Enable libckteec library for use crypto capabilities of optee
+
 config OPTEE_DRV_STUB
 	bool "Use optee driver stub"
 	help

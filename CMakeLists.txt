@@ -8,3 +8,4 @@ if (CONFIG_OPTEE_CLIENT)
 endif()
 
 add_subdirectory_ifdef(CONFIG_OPTEE_LIBTEEC libteec)
+add_subdirectory_ifdef(CONFIG_OPTEE_LIBCKTEEC libckteec)
