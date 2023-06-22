@@ -32,4 +32,7 @@ config OPTEE_DRV_STUB
 	help
 	  Use optee driver stub
 
+config OPTEE_TEE_SUPPLICANT
+	bool "Enable build of TEE Supplicant"
+
 endif
